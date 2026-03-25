@@ -85,7 +85,11 @@ AI-Law/
    - `LoginPage`, `SignupPage`에서 계정 생성 및 로그인
    - 로그인 성공 후 `Header`에 사용자 메뉴/알림 UI가 노출되는지 확인
   
-영상 : [Scene 1 (일반)](https://drive.google.com/file/d/1qrDG4IrmS81Vu3KpDlZLqePdCl-VPELO/preview)
+
+
+https://github.com/user-attachments/assets/4cecf564-fce2-4d18-b63f-dadc66f10220
+
+
 
 2. **[장면 2] 마이페이지(General) 대시보드**
    - `GeneralMypage.js`에서 `/api/mypage/general`로 대시보드 데이터 로딩

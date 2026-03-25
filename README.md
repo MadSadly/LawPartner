@@ -87,29 +87,51 @@ AI-Law/
 
 <details>
   <summary>
-    🎬 <strong>로그인 (일반) 시연 영상</strong> (클릭하여 시청)
-    <br><br>
-    <video src="https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a" width="400" controls muted></video>
+    <img src="https://img.shields.io/badge/Feature-Login-blue?style=flat-square" alt="Login"> 
+    <strong>로그인 (일반) 시연</strong> 
+    <kbd>클릭해서 확인</kbd>
   </summary>
-  <br>
-  <p>로그인 기능의 일반적인 흐름을 보여주는 짧은 시연 영상입니다. ID와 비밀번호를 입력하고 로그인 버튼을 클릭하는 과정을 담고 있습니다.</p>
+  <br />
+  <div align="center">
+    <video src="https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a" width="90%" controls></video>
+    <p align="left">
+      <strong>📌 주요 기능:</strong> 일반 사용자의 시각에서 로그인 흐름을 구현했습니다.<br />
+      <strong>🛠 기술 스택:</strong> React, Spring Boot, JWT
+    </p>
+  </div>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <img src="https://img.shields.io/badge/Feature-Auth-green?style=flat-square" alt="Auth"> 
+    <strong>로그인 (변호사) 시연</strong>
+    <kbd>클릭해서 확인</kbd>
+  </summary>
+  <br />
+  <div align="center">
+    <video src="https://github.com/user-attachments/assets/78610535-e367-486f-9e1c-9985dabb8140" width="90%" controls></video>
+    <p align="left">
+      <strong>📌 주요 기능:</strong> 변호사 전용 대시보드 접근 권한 확인 로직을 포함합니다.
+    </p>
+  </div>
 </details>
 
 <details>
   <summary>
-     🎬 <strong>로그인 (변호사) 시연 영상</strong> (클릭하여 시청)
-    <br><br>
-  <video src="https://github.com/user-attachments/assets/78610535-e367-486f-9e1c-9985dabb8140" width="600" controls></video>
+    <img src="https://img.shields.io/badge/Feature-Sign up-orange?style=flat-square" alt="Sign Up">
+    🎬 <strong>회원가입 시연</strong>
+    <kbd>클릭하여 시청</kbd>
   </summary>
-  <br>
-  <p>로그인 기능의 일반적인 흐름을 보여주는 짧은 시연 영상입니다. ID와 비밀번호를 입력하고 로그인 버튼을 클릭하는 과정을 담고 있습니다.</p>
-</details>
-
-<details>
-   <summary>
-  🎬 <strong>회원가입 시연 영상</strong> (클릭하여 시청)
-  <video src="https://drive.google.com/uc?export=download&id=1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd" controls width="640"></video>
-   </summary>
+  <br />
+  <div align="center">
+    <video src="https://drive.google.com/uc?export=download&id=1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd" width="90%" controls></video>
+    <p align="left">
+      <strong>📌 주요 기능:</strong> 사용자 정보를 입력받아 데이터베이스에 저장하는 회원가입 프로세스를 시연합니다. 유효성 검사 및 중복 확인 기능을 포함합니다.<br />
+      <strong>🛠 기술 스택:</strong> React, Spring Boot, MySQL
+    </p>
+  </div>
 </details>
 
 

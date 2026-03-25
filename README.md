@@ -182,12 +182,14 @@ AI-Law/
 <br />
 <br />
 <br />
+
 3. **[장면 3] 상담 게시판(질문 등록 → 상세)**
    - `ConsultationBoard`에서 `/api/boards`로 글 목록 조회
    - `AIChatPage`에서 사건/상황을 입력한 뒤 결과를 `WriteQuestionPage`로 전달하여 질문을 작성하는 흐름(구현 화면 연계)
    - `WriteQuestionPage`에서 `/api/boards`로 질문 작성
    - `ConsultationDetail`에서 `/api/boards/{id}`로 상세 조회
    - 상세 화면에서 답변/리뷰 및 채팅방 생성 동작을 시연
+
 <br />
 <br />
 <br />

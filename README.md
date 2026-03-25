@@ -85,11 +85,20 @@ AI-Law/
    - `LoginPage`, `SignupPage`에서 계정 생성 및 로그인
    - 로그인 성공 후 `Header`에 사용자 메뉴/알림 UI가 노출되는지 확인
 
-https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a
+<details>
+  <summary>로그인 (일반)</summary>
+  <video src="https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a" width="600" controls></video>
+</details>
 
-https://github.com/user-attachments/assets/78610535-e367-486f-9e1c-9985dabb8140
+<details>
+  <summary>로그인 (변호사)</summary>
+  <video src="https://github.com/user-attachments/assets/78610535-e367-486f-9e1c-9985dabb8140" width="600" controls></video>
+</details>
 
-https://drive.google.com/file/d/1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd/view?t=2/
+<details>
+  <summary>회원가입 보기</summary>
+  <video src="https://drive.google.com/uc?export=download&id=1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd" controls width="640"></video>
+</details>
 
 
 2. **[장면 2] 마이페이지(General) 대시보드**

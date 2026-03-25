@@ -134,8 +134,8 @@ AI-Law/
    - 내가 남긴 리뷰 목록 노출 및 리뷰 삭제(`/api/mypage/review/{reviewNo}`) 후 화면 갱신
    - 최근 게시판 글 목록에서 상담 게시판으로 이동
   
-   <details>
-<summary><b>🔐 마이페이지 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<details>
+<summary><b>👤 마이페이지 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
 <br />
 
 <div align="center">
@@ -152,9 +152,10 @@ AI-Law/
 
 </details>
 
+---
 
 <details>
-<summary><b>🔐 마이페이지 (변호사) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<summary><b>⚖️ 마이페이지 (변호사) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
 <br />
 
 <div align="center">

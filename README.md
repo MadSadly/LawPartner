@@ -86,7 +86,9 @@ AI-Law/
    - 로그인 성공 후 `Header`에 사용자 메뉴/알림 UI가 노출되는지 확인
 
 https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a
+
 https://github.com/user-attachments/assets/78610535-e367-486f-9e1c-9985dabb8140
+
 https://drive.google.com/file/d/1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd/view?t=2/
 
 

@@ -372,27 +372,8 @@ AI 상담 후 게시판 등록 영상 : [Scene 2 (일반)](https://drive.google.
 
 </details>
 
-<br />
-<br />
-<br />
-
 ---
 
-
-7. **[장면 7] 상담 상태 변화 & 실시간 알림**
-   - `Header`에서 `/sub/user/{userNo}/notification` 구독으로 알림이 실시간 반영
-   - 채팅방 진행 상태(Status 변경)가 상단 UI로 갱신되는 흐름 확인
-
-
----
-
-
-8. **[장면 8] 상담 처리 대시보드(ky, 선택)**
-   - `ky/Lawmainpage.js`에서 상담 목록/캘린더/후기 모달 확인
-   - 상담 수락 처리(`/api/chat/room/accept/{roomId}`)로 진행 상태가 바뀌는 것을 보여줌
-
-
----
 
 
 ## 7. Pages & Features (기능별 정리)

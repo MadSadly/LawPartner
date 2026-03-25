@@ -336,11 +336,54 @@ AI 상담 후 게시판 등록 영상 : [Scene 2 (일반)](https://drive.google.
 
 ---
 
+<br />
+<br />
+<br />
 
 6. **[장면 6] 일정 제안 → 확정/거절**
    - 채팅에서 일정 제안 전송
    - 상대가 `/api/chat/calendar/confirm` 또는 `/api/chat/calendar/reject`로 처리하면 상태 카드/UI가 즉시 반영되는 것을 시연
 
+<details>
+<summary><b>👤 1:1 채팅 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/ccf82582-0000-47d9-b933-a07d70b7d1a3" width="90%" controls></video>
+</div>
+
+<br />
+
+> 변호사가 제안 한 일정을 수락합니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</details>
+
+<details>
+<summary><b>⚖️ 일정 제안 하기 (변호사) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/faf783fb-5eda-414b-8267-2a08fa098ddb" width="90%" controls></video>
+</div>
+
+
+<br />
+
+> 변호사가 면담 일정을 잡습니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</details>
+
+<br />
+<br />
+<br />
 
 ---
 

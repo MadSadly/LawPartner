@@ -52,3 +52,7 @@ backend-ai/db/
 
 # backend-ai: pip 1회 설치 완료 마커 (로컬만)
 backend-ai/.deps_ok
+
+# --- [Local tools: 용량 큰 설치본] ---
+tools/apache-maven-*/
+tools/apache-maven-*-bin.zip

@@ -344,6 +344,10 @@ AI 상담 후 게시판 등록 영상 : [Scene 2 (일반)](https://drive.google.
    - 채팅에서 일정 제안 전송
    - 상대가 `/api/chat/calendar/confirm` 또는 `/api/chat/calendar/reject`로 처리하면 상태 카드/UI가 즉시 반영되는 것을 시연
 
+<br />
+<br />
+<br />
+
 <details>
 <summary><b>👤 1:1 채팅 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
 <br />

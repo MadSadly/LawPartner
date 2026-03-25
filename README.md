@@ -86,7 +86,7 @@ AI-Law/
    - 로그인 성공 후 `Header`에 사용자 메뉴/알림 UI가 노출되는지 확인
 
 <details>
-<summary><b>🔐 로그인 (일반) 시연</b> &nbsp; <img src="https://img.shields.io/badge/▶_영상_보기-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="video"></summary>
+<summary><b>🔐 로그인 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
 <br />
 
 <div align="center">
@@ -104,7 +104,7 @@ AI-Law/
 </details>
 
 <details>
-<summary><b>⚖️ 로그인 (변호사) 시연</b> &nbsp; <img src="https://img.shields.io/badge/▶_영상_보기-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="video"></summary>
+<summary><b>🔐 로그인 (변호사) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
 <br />
 
 <div align="center">
@@ -121,14 +121,12 @@ AI-Law/
 
 </details>
 
----
-
-
 <details>
   <summary>회원가입 보기</summary>
   <video src="https://drive.google.com/uc?export=download&id=1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd" controls width="640"></video>
 </details>
 
+---
 
 2. **[장면 2] 마이페이지(General) 대시보드**
    - `GeneralMypage.js`에서 `/api/mypage/general`로 대시보드 데이터 로딩
@@ -138,6 +136,10 @@ AI-Law/
      - 수정/삭제: `/api/mypage/calendar/{id}`
    - 내가 남긴 리뷰 목록 노출 및 리뷰 삭제(`/api/mypage/review/{reviewNo}`) 후 화면 갱신
    - 최근 게시판 글 목록에서 상담 게시판으로 이동
+  
+   
+---
+
 
 3. **[장면 3] 상담 게시판(질문 등록 → 상세)**
    - `ConsultationBoard`에서 `/api/boards`로 글 목록 조회
@@ -146,11 +148,19 @@ AI-Law/
    - `ConsultationDetail`에서 `/api/boards/{id}`로 상세 조회
    - 상세 화면에서 답변/리뷰 및 채팅방 생성 동작을 시연
 
+
+---
+
+
 4. **[장면 4] 전문가 찾기 & 상담 진행**
    - `ExpertsPage`에서 `/api/lawyers` 목록/조건 조회
    - `ExpertDetailPage`에서 `/api/lawyers/{id}` 상세 확인
    - 상담 진행 시 `/api/boards/chat/room`로 채팅방 생성 → `/api/chat/room/notify`로 상대 알림 발송
    - 생성된 `roomId`로 `chatList/{roomId}` 이동
+
+
+---
+
 
 5. **[장면 5] 1:1 실시간 채팅(핵심 기능)**
    - `chatList.js`에서 입장 시
@@ -159,19 +169,33 @@ AI-Law/
    - SockJS + STOMP로 `/sub/chat/room/{roomId}` 구독
    - 송신은 `/pub/chat/message`로 메시지를 전송하고, 구독 메시지로 화면이 갱신되는 것을 확인
 
+
+---
+
+
 6. **[장면 6] 일정 제안 → 확정/거절**
    - 채팅에서 일정 제안 전송
    - 상대가 `/api/chat/calendar/confirm` 또는 `/api/chat/calendar/reject`로 처리하면 상태 카드/UI가 즉시 반영되는 것을 시연
+
+
+---
+
 
 7. **[장면 7] 상담 상태 변화 & 실시간 알림**
    - `Header`에서 `/sub/user/{userNo}/notification` 구독으로 알림이 실시간 반영
    - 채팅방 진행 상태(Status 변경)가 상단 UI로 갱신되는 흐름 확인
 
+
+---
+
+
 8. **[장면 8] 상담 처리 대시보드(ky, 선택)**
    - `ky/Lawmainpage.js`에서 상담 목록/캘린더/후기 모달 확인
    - 상담 수락 처리(`/api/chat/room/accept/{roomId}`)로 진행 상태가 바뀌는 것을 보여줌
 
+
 ---
+
 
 ## 7. Pages & Features (기능별 정리)
 

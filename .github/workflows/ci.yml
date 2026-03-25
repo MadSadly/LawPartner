@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+# Node.js 20 deprecation 경고 해소 (2026년 6월부터 기본이 될 Node 24 사용)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  # ─────────────────────────────────────────
+  # 1. Spring Boot 백엔드
+  # ─────────────────────────────────────────
+  backend:
+    name: Backend (Spring Boot)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Backend-main
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Build with Maven
+        run: mvn -B package -DskipTests
+
+      - name: Run tests (optional)
+        run: mvn -B test
+        continue-on-error: false
+
+  # ─────────────────────────────────────────
+  # 2. Python AI 백엔드
+  # ─────────────────────────────────────────
+  backend-ai:
+    name: Backend AI (FastAPI)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend-ai
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: backend-ai/requirements.txt  # ✅ 루트 기준 경로
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Syntax check
+        run: python -m py_compile main.py update_db.py
+        # main.py가 시작 시 ChromaDB 연결을 시도하므로 실행 대신 문법 검사만 수행
+
+  # ─────────────────────────────────────────
+  # 3. React 프론트엔드
+  # ─────────────────────────────────────────
+  frontend:
+    name: Frontend (React)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json  # ✅ 루트 기준 경로로 수정
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps  # ✅ React 19 + react-scripts 5 호환
+
+      - name: Build
+        # CRA가 CI 환경에서 eslint warning 을 error 로 취급해서 빌드가 실패하므로
+        # CI에서는 경고만 출력하고 빌드는 통과시키도록 설정
+        run: CI=false npm run build

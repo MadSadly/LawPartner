@@ -1,0 +1,21 @@
+# After changing deps: delete .deps_ok in this folder, then run run.bat (or: pip install -r requirements.txt)
+# If you upgraded from langchain 0.3.x: pip uninstall -y langchain
+fastapi
+uvicorn
+httptools>=0.6.0
+pydantic
+python-dotenv
+# LangChain stack aligned with DB PC: core 1.x + community 0.4 (langchain-classic pulled by community)
+langchain-core==1.2.20
+langchain-community==0.4.1
+langchain-text-splitters>=1.0.0,<2.0.0
+langchain-google-genai>=2.0.10
+langchain-openai
+datasets
+tiktoken
+faiss-cpu
+# Chroma client must match persisted DB (mismatch -> KeyError _type etc.)
+chromadb==1.5.1
+onnxruntime>=1.14.1
+numpy>=1.24.0
+google-generativeai

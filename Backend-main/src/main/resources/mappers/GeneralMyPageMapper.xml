@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.backend_main.KimMinSu.mapper.GeneralMyPageMapper">
+
+    <select id="getUserName" parameterType="long" resultType="string">
+        SELECT USER_NM
+        FROM TB_USER
+        WHERE USER_NO = #{userNo}
+    </select>
+
+    <select id="getRecentReplyCount" parameterType="long" resultType="int">
+        SELECT COUNT(*)
+        FROM TB_BOARD_REPLY R
+                 JOIN TB_BOARD B ON R.BOARD_NO = B.BOARD_NO
+        WHERE B.WRITER_NO = #{userNo}
+          AND R.REG_DT >= SYSDATE - 7
+    </select>
+
+    <select id="getRequestCount" parameterType="long" resultType="int">
+        SELECT COUNT(*)
+        FROM TB_CHAT_ROOM
+        WHERE USER_NO = #{userNo}
+    </select>
+
+    <select id="getRecentConsultations" parameterType="long" resultType="com.example.backend_main.dto.GeneralMyPageDTO$ConsultationItemDTO">
+        SELECT * FROM (
+                          SELECT
+                              U.USER_NM AS lawyerName,
+                              (SELECT CODE_NM FROM TB_COM_CODE WHERE GRP_CODE = 'CASE_STEP' AND DTL_CODE = CR.PROGRESS_CODE) AS status,
+                              TO_CHAR(CR.REG_DT, 'YYYY-MM-DD') AS regDate,
+                              '법률상담' AS category -- 카테고리는 TB_BOARD나 별도 컬럼이 필요하나 일단 고정값 예시
+                          FROM TB_CHAT_ROOM CR
+                                   JOIN TB_LAWYER_INFO L ON CR.LAWYER_NO = L.USER_NO
+                                   JOIN TB_USER U ON L.USER_NO = U.USER_NO
+                          WHERE CR.USER_NO = #{userNo}
+                          ORDER BY CR.REG_DT DESC
+                      )
+        WHERE ROWNUM &lt;= 5
+    </select>
+
+    <select id="getRecentPosts" parameterType="long" resultType="com.example.backend_main.dto.GeneralMyPageDTO$MyBoardDTO">
+        SELECT * FROM (
+                          SELECT
+                              B.BOARD_NO AS boardNo,
+                              B.TITLE AS title,
+                              TO_CHAR(B.REG_DT, 'YYYY-MM-DD') AS regDate,
+                              (SELECT COUNT(*) FROM TB_BOARD_REPLY WHERE BOARD_NO = B.BOARD_NO) AS replyCount
+                          FROM TB_BOARD B
+                          WHERE B.WRITER_NO = #{userNo}
+                          ORDER BY B.REG_DT DESC
+                      )
+        WHERE ROWNUM &lt;= 5
+    </select>
+
+    <select id="getCalendarEvents" parameterType="long" resultType="com.example.backend_main.dto.GeneralMyPageDTO$CalendarEventDTO">
+        SELECT
+            U.USER_NM || ' 변호사 상담' AS title,
+            TO_CHAR(CR.REG_DT, 'YYYY-MM-DD') AS date_val, -- DTO 필드명이 date라면 별칭 주의
+            '#3b82f6' AS color
+        FROM TB_CHAT_ROOM CR
+                 JOIN TB_USER U ON CR.LAWYER_NO = U.USER_NO
+        WHERE CR.USER_NO = #{userNo}
+    </select>
+
+</mapper>

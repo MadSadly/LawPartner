@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 풀 캘린더 속성 */
+.fc { font-family: 'sans-serif'; }
+.fc-theme-standard td, .fc-theme-standard th { border: 1px solid #f1f5f9 !important; }
+.fc .fc-toolbar-title { font-size: 1.1rem !important; color: #1e293b; font-weight: 700; }
+.fc .fc-button { padding: 4px 8px !important; font-size: 0.8rem !important; }
+
+/* 캘린더 내부 셀 높이 최적화 */
+.fc .fc-daygrid-day-frame {
+  min-height: 80px !important; /* 각 날짜 칸의 최소 높이를 줄임 */
+}
+
+/* 툴바 간격 줄이기 */
+.fc .fc-toolbar {
+  margin-bottom: 1rem !important;
+}
+
+/* 짤림 방지를 위한 스크롤 제거 */
+.fc-scroller {
+  overflow: hidden !important;
+}
+
+/* FullCalendar: 일정이 1일 칸 안에서만 보이도록, 제목 한 줄 말줄임 + 툴팁 */
+.fc-event {
+    padding: 4px 6px !important;
+    border: none !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    border-radius: 4px !important;
+}
+
+.fc-event-title {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    display: block !important;
+}

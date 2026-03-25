@@ -1,0 +1,54 @@
+# --- [Security: 가장 중요] 설정 및 비밀번호 파일 ---
+# 민수 님이 올리고 싶지 않아 하는 프로퍼티 파일 [cite: 2026-01-13]
+**/application.properties
+**/application-secret.properties
+
+*.env
+*.key
+
+# --- [Backend: Spring Boot] 빌드 결과물 ---
+**/target/
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
+**/out/
+
+# --- [AI Server: Python] 가상환경 및 캐시 ---
+**/venv/
+**/__pycache__/
+**/.pytest_cache
+**/.ipynb_checkpoints
+
+# --- [Frontend: React] 라이브러리 및 빌드 ---
+**/node_modules/
+**/build/
+**/.pnp
+**/.pnp.js
+
+# --- [IDE: 개발 도구 개인 설정] ---
+# 이미지에서 본 인텔리제이 설정 폴더 [cite: 2025-10-17]
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+**/docs/
+**/logs/
+
+# --- [OS: 시스템 파일] ---
+.DS_Store
+Thumbs.db
+
+backend-ai/db/
+
+# [log 파일]
+/Backend-main/logs/
+logs/
+*.log
+
+
+backend-ai/db/
+
+# backend-ai: pip 1회 설치 완료 마커 (로컬만)
+backend-ai/.deps_ok

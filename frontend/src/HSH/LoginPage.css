@@ -1,0 +1,79 @@
+/* 배경 효과 */
+.bg-mesh {
+    background-color: #f8fafc;
+    background-image: radial-gradient(at 0% 0%, rgba(30, 58, 138, 0.05) 0px, transparent 50%), 
+                      radial-gradient(at 100% 100%, rgba(30, 58, 138, 0.05) 0px, transparent 50%);
+}
+
+/* 유리 질감 (Glassmorphism) */
+.glass-login {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 등장 애니메이션 */
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 에러 흔들림 효과 */
+.shake {
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+/* 입력창 포커스 효과 */
+.input-focus:focus {
+    background-color: #ffffff;
+    border-color: #1e3a8a; /* tailwind blue-900 */
+    box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.1);
+}
+
+/* Recovery Modal / Segment Control */
+.segment-container {
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.segment-btn {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.segment-active-bg {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    width: calc(50% - 4px);
+    background: white;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

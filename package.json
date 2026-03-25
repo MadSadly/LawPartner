@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.20",
+    "@fullcalendar/daygrid": "^6.1.20",
+    "@fullcalendar/interaction": "^6.1.20",
+    "@fullcalendar/react": "^6.1.20",
+    "@fullcalendar/timegrid": "^6.1.20",
+    "@phosphor-icons/react": "^2.1.10",
+    "@stomp/stompjs": "^7.3.0",
+    "cookie": "^1.1.1",
+    "html2canvas": "^1.4.1",
+    "lucide-react": "^0.563.0",
+    "react-toastify": "^11.0.5",
+    "recharts": "^3.7.0",
+    "sockjs-client": "^1.6.1"
+  }
+}

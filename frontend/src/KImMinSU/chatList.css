@@ -1,0 +1,19 @@
+/* 채팅 영역 스크롤바 - 페이지 베이스(navy/slate) 톤 */
+.chat-scroll-area::-webkit-scrollbar {
+    width: 8px;
+}
+.chat-scroll-area::-webkit-scrollbar-track {
+    background: #e2e8f0;
+    border-radius: 4px;
+}
+.chat-scroll-area::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 4px;
+}
+.chat-scroll-area::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+.chat-scroll-area {
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 #e2e8f0;
+}

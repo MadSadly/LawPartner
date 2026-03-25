@@ -1,0 +1,96 @@
+/* 1. 배경 효과 (로그인 페이지와 통일) */
+.bg-mesh {
+    background-color: #f8fafc;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(30, 58, 138, 0.05) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(30, 58, 138, 0.05) 0px, transparent 50%);
+    min-height: 100vh;
+    
+}
+
+/* 2. 유리 질감 카드 (Glassmorphism) */
+.glass-card {
+    /* 가독성을 위해 배경 불투명도를 살짝 높임 */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05);
+    border-radius: 2.5rem; /* 로그인 페이지와 동일한 곡률 */
+
+    /* ★ 고정 높이를 없애고 높이가 자동으로 늘어나게 설정 ★ */
+    height: auto;
+    max-height: none; 
+    overflow-y: visible; /* 내부 스크롤을 끔 */
+}
+
+/* Chrome, Safari, Opera용 스크롤바 숨기기 */
+.glass-card::-webkit-scrollbar {
+    display: none; 
+}
+
+/* 3. 입력창 공통 스타일 */
+.input-focus:focus {
+    background: white !important;
+    border-color: #1e3a8a !important; /* blue-900 */
+    box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.08);
+}
+
+/* 4. 전문 분야(Specialty) 태그 레이아웃 */
+.specialty-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.specialty-tag {
+    cursor: pointer;
+    user-select: none;
+}
+
+.specialty-tag input {
+    display: none; /* 실제 체크박스는 숨김 */
+}
+
+.specialty-tag span {
+    display: block;
+    padding: 10px 5px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 14px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #64748b;
+    text-align: center;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+}
+
+/* 태그 체크되었을 때 스타일 */
+.specialty-tag input:checked + span {
+    background-color: #1e3a8a; /* blue-900 */
+    color: white;
+    border-color: #1e3a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 58, 138, 0.2);
+}
+
+/* 5. 애니메이션 및 효과 */
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shake {
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}

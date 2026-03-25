@@ -121,10 +121,7 @@ AI-Law/
 
 </details>
 
-<details>
-  <summary>회원가입 보기</summary>
-  <video src="https://drive.google.com/uc?export=download&id=1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd" controls width="640"></video>
-</details>
+회원가입 시연 영상 : [Scene 1 (일반)](https://drive.google.com/file/d/1qrDG4IrmS81Vu3KpDlZLqePdCl-VPELO/preview)
 
 ---
 

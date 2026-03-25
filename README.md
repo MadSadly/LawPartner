@@ -84,6 +84,10 @@ AI-Law/
 1. **[장면 1] 회원가입/로그인**
    - `LoginPage`, `SignupPage`에서 계정 생성 및 로그인
    - 로그인 성공 후 `Header`에 사용자 메뉴/알림 UI가 노출되는지 확인
+<br />
+<br />
+<br />
+<br />
 
 <details>
 <summary><b>🔐 로그인 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
@@ -133,7 +137,10 @@ AI-Law/
      - 수정/삭제: `/api/mypage/calendar/{id}`
    - 내가 남긴 리뷰 목록 노출 및 리뷰 삭제(`/api/mypage/review/{reviewNo}`) 후 화면 갱신
    - 최근 게시판 글 목록에서 상담 게시판으로 이동
-  
+<br />
+<br />
+<br />
+<br />
 <details>
 <summary><b>👤 마이페이지 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
 <br />
@@ -178,6 +185,10 @@ AI-Law/
    - `WriteQuestionPage`에서 `/api/boards`로 질문 작성
    - `ConsultationDetail`에서 `/api/boards/{id}`로 상세 조회
    - 상세 화면에서 답변/리뷰 및 채팅방 생성 동작을 시연
+<br />
+<br />
+<br />
+<br />
 
 <details>
 <summary><b> 질문 등록 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
@@ -196,7 +207,7 @@ AI-Law/
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
 
-AI 상담 후 게시판 등록 영상 : [(일반)](https://drive.google.com/file/d/1FL-hanilUj_pbp6g6hCMsaeRVPjII5BN/view?t=2)
+AI 상담 후 게시판 등록 영상 : [Scene 2 (일반)](https://drive.google.com/file/d/1FL-hanilUj_pbp6g6hCMsaeRVPjII5BN/view?t=2)
 
 ---
 

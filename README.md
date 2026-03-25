@@ -152,8 +152,6 @@ AI-Law/
 
 </details>
 
----
-
 <details>
 <summary><b>⚖️ 마이페이지 (변호사) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
 <br />
@@ -181,6 +179,24 @@ AI-Law/
    - `ConsultationDetail`에서 `/api/boards/{id}`로 상세 조회
    - 상세 화면에서 답변/리뷰 및 채팅방 생성 동작을 시연
 
+<details>
+<summary><b> 질문 등록 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/0f61336c-6ec0-4291-a256-041364fbb878" width="90%" controls></video>
+</div>
+
+<br />
+
+> 상담 게시판 질문 등록 게시글 입니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+
+AI 상담 후 게시판 등록 영상 : [(일반)](https://drive.google.com/file/d/1FL-hanilUj_pbp6g6hCMsaeRVPjII5BN/view?t=2)
 
 ---
 

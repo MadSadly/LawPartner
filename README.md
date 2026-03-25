@@ -86,8 +86,6 @@ AI-Law/
    - 로그인 성공 후 `Header`에 사용자 메뉴/알림 UI가 노출되는지 확인
 <br />
 <br />
-<br />
-<br />
 
 <details>
 <summary><b>🔐 로그인 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
@@ -126,6 +124,9 @@ AI-Law/
 </details>
 
 회원가입 시연 영상 : [Scene 1 (일반)](https://drive.google.com/file/d/1qrDG4IrmS81Vu3KpDlZLqePdCl-VPELO/preview)
+<br />
+<br />
+<br />
 
 ---
 
@@ -178,14 +179,15 @@ AI-Law/
 </details>
 ---
 
-
+<br />
+<br />
+<br />
 3. **[장면 3] 상담 게시판(질문 등록 → 상세)**
    - `ConsultationBoard`에서 `/api/boards`로 글 목록 조회
    - `AIChatPage`에서 사건/상황을 입력한 뒤 결과를 `WriteQuestionPage`로 전달하여 질문을 작성하는 흐름(구현 화면 연계)
    - `WriteQuestionPage`에서 `/api/boards`로 질문 작성
    - `ConsultationDetail`에서 `/api/boards/{id}`로 상세 조회
    - 상세 화면에서 답변/리뷰 및 채팅방 생성 동작을 시연
-<br />
 <br />
 <br />
 <br />
@@ -213,16 +215,65 @@ AI 상담 후 게시판 등록 영상 : [Scene 2 (일반)](https://drive.google.
 </details>
 ---
 
+<br />
+<br />
+<br />
 
 4. **[장면 4] 전문가 찾기 & 상담 진행**
    - `ExpertsPage`에서 `/api/lawyers` 목록/조건 조회
    - `ExpertDetailPage`에서 `/api/lawyers/{id}` 상세 확인
    - 상담 진행 시 `/api/boards/chat/room`로 채팅방 생성 → `/api/chat/room/notify`로 상대 알림 발송
    - 생성된 `roomId`로 `chatList/{roomId}` 이동
+<br />
+<br />
+<br />
+
+<details>
+<summary><b>👤 전문가 찾기 & 상담 신청 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/d949476d-dbbe-437a-ad7b-3939c40910a7" width="90%" controls></video>
+</div>
+
+
+
+<br />
+
+> 일반 사용자가 변호사에게 1:1 채팅 요청하는 기능입니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</details>
+
+<details>
+<summary><b>⚖️ 상담 요청 받기 (변호사) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/a1bad2fa-4ca3-41a6-97d1-e68ec78c65c1" width="90%" controls></video>
+</div>
+
+<br />
+
+> 변호사가 일반 사용자의 상담을 요청 받는 기능입니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</details>
+<br />
+<br />
+<br />
 
 
 ---
-
+<br />
+<br />
+<br />
 
 5. **[장면 5] 1:1 실시간 채팅(핵심 기능)**
    - `chatList.js`에서 입장 시
@@ -230,7 +281,51 @@ AI 상담 후 게시판 등록 영상 : [Scene 2 (일반)](https://drive.google.
      - 읽음 처리: `/api/chat/room/{roomId}/read`
    - SockJS + STOMP로 `/sub/chat/room/{roomId}` 구독
    - 송신은 `/pub/chat/message`로 메시지를 전송하고, 구독 메시지로 화면이 갱신되는 것을 확인
+<br />
+<br />
+<br />
+<details>
+<summary><b>👤 1:1 채팅 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
 
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/699416fc-b31a-463d-a237-185f236a5b80" width="90%" controls></video>
+</div>
+
+
+<br />
+
+> 변호사에게 메시지를 보냅니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</details>
+
+<details>
+<summary><b>⚖️ 상담 요청 받기 (변호사) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/b8a973de-4546-42cf-a341-1ccb08b7d8a1" width="90%" controls></video>
+</div>
+
+
+<br />
+
+> 변호사가 일반 사용자의 채팅을 받는 기능입니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</details>
+
+
+<br />
+<br />
+<br />
 
 ---
 

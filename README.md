@@ -208,11 +208,12 @@ AI-Law/
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
+</details>
 
 AI 상담 후 게시판 등록 영상 : [Scene 2 (일반)](https://drive.google.com/file/d/1FL-hanilUj_pbp6g6hCMsaeRVPjII5BN/view?t=2)
 
 
-</details>
+
 ---
 
 <br />

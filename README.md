@@ -86,7 +86,7 @@ AI-Law/
    - 로그인 성공 후 `Header`에 사용자 메뉴/알림 UI가 노출되는지 확인
 
 <details>
-<summary><b>🔐 로그인 (일반) 시연</b></summary>
+<summary><b>🔐 로그인 (일반) 시연</b> &nbsp; <img src="https://img.shields.io/badge/▶_영상_보기-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="video"></summary>
 <br />
 
 <div align="center">
@@ -103,10 +103,8 @@ AI-Law/
 
 </details>
 
----
-
 <details>
-<summary><b>⚖️ 로그인 (변호사) 시연</b></summary>
+<summary><b>⚖️ 로그인 (변호사) 시연</b> &nbsp; <img src="https://img.shields.io/badge/▶_영상_보기-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="video"></summary>
 <br />
 
 <div align="center">
@@ -122,6 +120,10 @@ AI-Law/
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
 </details>
+
+---
+
+
 <details>
   <summary>회원가입 보기</summary>
   <video src="https://drive.google.com/uc?export=download&id=1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd" controls width="640"></video>

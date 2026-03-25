@@ -86,18 +86,30 @@ AI-Law/
    - 로그인 성공 후 `Header`에 사용자 메뉴/알림 UI가 노출되는지 확인
 
 <details>
-  🎬 <strong>로그인 (일반) 시연 영상</strong> (클릭하여 시청)
-  <video src="https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a" width="600" controls></video>
+  <summary>
+    🎬 <strong>로그인 (일반) 시연 영상</strong> (클릭하여 시청)
+    <br><br>
+    <video src="https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a" width="400" controls muted></video>
+  </summary>
+  <br>
+  <p>로그인 기능의 일반적인 흐름을 보여주는 짧은 시연 영상입니다. ID와 비밀번호를 입력하고 로그인 버튼을 클릭하는 과정을 담고 있습니다.</p>
 </details>
 
 <details>
-  🎬 <strong>로그인 (변호사) 시연 영상</strong> (클릭하여 시청)
+  <summary>
+     🎬 <strong>로그인 (변호사) 시연 영상</strong> (클릭하여 시청)
+    <br><br>
   <video src="https://github.com/user-attachments/assets/78610535-e367-486f-9e1c-9985dabb8140" width="600" controls></video>
+  </summary>
+  <br>
+  <p>로그인 기능의 일반적인 흐름을 보여주는 짧은 시연 영상입니다. ID와 비밀번호를 입력하고 로그인 버튼을 클릭하는 과정을 담고 있습니다.</p>
 </details>
 
 <details>
+   <summary>
   🎬 <strong>회원가입 시연 영상</strong> (클릭하여 시청)
   <video src="https://drive.google.com/uc?export=download&id=1hcvcdNCG-Mye01TH97d8jl9NFFj2nudd" controls width="640"></video>
+   </summary>
 </details>
 
 

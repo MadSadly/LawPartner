@@ -90,7 +90,7 @@ AI-Law/
 <br />
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a" width="90%" controls></video>
+  <video src="https://github.com/user-attachments/assets/78610535-e367-486f-9e1c-9985dabb8140" width="90%" controls></video>
 </div>
 
 <br />
@@ -108,7 +108,7 @@ AI-Law/
 <br />
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/78610535-e367-486f-9e1c-9985dabb8140" width="90%" controls></video>
+   <video src="https://github.com/user-attachments/assets/1fd14c0a-a77e-4e98-8c9b-def4188bbf8a" width="90%" controls>/video>
 </div>
 
 <br />

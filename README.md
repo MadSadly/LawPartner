@@ -134,7 +134,42 @@ AI-Law/
    - 내가 남긴 리뷰 목록 노출 및 리뷰 삭제(`/api/mypage/review/{reviewNo}`) 후 화면 갱신
    - 최근 게시판 글 목록에서 상담 게시판으로 이동
   
-   
+   <details>
+<summary><b>🔐 마이페이지 (일반) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/bf43bb92-e3d4-40e6-87c5-07318be2db82" width="90%" controls></video>
+</div>
+
+<br />
+
+> 일반 사용자의 마이페이지 입니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</details>
+
+
+<details>
+<summary><b>🔐 마이페이지 (변호사) 시연</b> &nbsp;&nbsp; 🎬 영상 있음</summary>
+<br />
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/1ce16ae3-4c47-4dce-b7db-f0deebdfcc4b" width="90%" controls></video>
+</div>
+
+<br />
+
+> 변호사 마이페이지 입니다.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+</details>
 ---
 
 

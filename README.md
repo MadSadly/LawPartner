@@ -81,9 +81,10 @@ AI-Law/
 
 <br />
 전체 시연 영상 : https://youtu.be/Gf6rH7uUiC8
+
+<br />
 <br />
 
-아래 장면들은 `docs/` 폴더에 캡처 이미지를 넣고, README에 링크로 연결하면 포트폴리오 완성도가 크게 올라갑니다.
 
 1. **[장면 1] 회원가입/로그인**
    - `LoginPage`, `SignupPage`에서 계정 생성 및 로그인
